@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jogos da Agatha</title>
+  <title>🎮 JOGOS DA AGATHA</title>
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
     body {
       margin: 0;
       font-family: 'Fredoka One', cursive;
-      background: linear-gradient(to bottom, #fce3ff, #fff4d6);
+      background: linear-gradient(to bottom, #ffe6f7, #fff4d6);
       overflow-x: hidden;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
     header {
-      background-color: #ffe0f0;
+      background-color: #ffd8f0;
       padding: 30px 10px;
       text-align: center;
       position: relative;
     }
 
     h1 {
-      color: #ff66a3;
-      font-size: 2.5em;
+      color: #ff4d94;
+      font-size: 2.7em;
       margin: 0 0 10px;
-      text-shadow: 1px 1px #fff;
+      text-shadow: 2px 2px #fff;
     }
 
     #ninoo {
@@ -43,8 +44,8 @@
       border: 3px dashed #ffd166;
       border-radius: 20px;
       display: inline-block;
-      padding: 10px 20px;
-      font-size: 1.2em;
+      padding: 12px 24px;
+      font-size: 1.4em;
       color: #b95f89;
       margin-top: 10px;
       position: relative;
@@ -68,32 +69,34 @@
     }
 
     h2 {
-      font-size: 2em;
+      font-size: 2.3em;
       color: #ff8c42;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-family: 'Comic Sans MS', cursive;
     }
 
     .jogos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 25px;
     }
 
     .jogo {
-      background: #fffae3;
+      background: #fff7e6;
       border: 4px solid #ffcf56;
-      border-radius: 20px;
+      border-radius: 25px;
       padding: 20px 10px;
-      width: 160px;
-      box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      width: 45vw;
+      max-width: 160px;
+      box-shadow: 5px 5px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s, background 0.2s;
       cursor: pointer;
     }
 
     .jogo:hover {
-      transform: scale(1.05);
-      background: #fffbd0;
+      transform: scale(1.07);
+      background: #fff0c2;
     }
 
     .jogo img {
@@ -103,28 +106,28 @@
 
     .jogo div {
       margin-top: 10px;
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #6f4e7c;
     }
 
     footer {
-      background-color: #ffe0e0;
+      background-color: #ffd6e0;
       padding: 25px 10px;
       text-align: center;
       margin-top: 40px;
     }
 
     .cta {
-      font-size: 1.3em;
-      color: #ff4477;
+      font-size: 1.5em;
+      color: #ff3399;
       font-weight: bold;
       text-shadow: 1px 1px #fff;
     }
 
     .estrela {
       position: absolute;
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       background: url('https://img.icons8.com/emoji/48/star-emoji.png') no-repeat center;
       background-size: contain;
       animation: flutuar 8s infinite linear;
@@ -151,9 +154,8 @@
   <div class="estrela"></div>
 
   <header>
-    <h1>Olá, Agatha! 🌈</h1>
+    <h1>OLÁ, AGATHA! 🌈</h1>
 
-    <!-- Mascote Ninoo em SVG -->
     <svg id="ninoo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="32" cy="32" r="30" fill="#FFB6C1" stroke="#FF69B4" stroke-width="4"/>
       <circle cx="22" cy="26" r="5" fill="#fff"/>
@@ -163,48 +165,42 @@
       <path d="M22 42 Q32 50 42 42" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
     </svg>
 
-    <div class="fala-balao">Seja bem-vinda ao presente do papai 🎁</div>
+    <div class="fala-balao">SEJA BEM-VINDA AO PRESENTE DO PAPAI 🎁</div>
   </header>
 
-<main>
-  <h2 style="text-align: center; font-family: 'Comic Sans MS', cursive; color: #ff69b4;">Vamos brincar!</h2>
-  <div class="jogos" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+  <main>
+    <h2>ESCOLHA UM JOGUINHO ABAIXO 👇</h2>
 
-    <a class="jogo" href="https://lwcuiaba.github.io/encaixe/" style="text-align: center; text-decoration: none;">
-      <img src="https://img.icons8.com/clouds/100/blocks.png" alt="Jogo do Encaixe">
-      <div>Jogo do Encaixe</div>
-    </a>
+    <div class="jogos">
+      <a class="jogo" href="https://lwcuiaba.github.io/encaixe/">
+        <img src="https://raw.githubusercontent.com/lwcuiaba/jogosdaagatha/main/encaixe.png" alt="JOGO DO ENCAIXE">
+        <div>🧩 JOGO DO ENCAIXE</div>
+      </a>
 
-    <a class="jogo" href="https://lwcuiaba.github.io/jogo2/" style="text-align: center; text-decoration: none;">
-      <img src="https://img.icons8.com/clouds/100/family.png" alt="Memória Família">
-      <div>Memória (Família)</div>
-    </a>
+      <a class="jogo" href="https://lwcuiaba.github.io/jogo2/">
+        <img src="https://raw.githubusercontent.com/lwcuiaba/jogosdaagatha/main/memoria-familia.png" alt="MEMÓRIA FAMÍLIA">
+        <div>👨‍👩‍👧 MEMÓRIA (FAMÍLIA)</div>
+      </a>
 
-    <a class="jogo" href="https://lwcuiaba.github.io/memoria-pokemon/" style="text-align: center; text-decoration: none;">
-      <img src="https://img.icons8.com/clouds/100/pokeball.png" alt="Memória Pokémon">
-      <div>Memória (Pokémon)</div>
-    </a>
+      <a class="jogo" href="https://lwcuiaba.github.io/memoria-pokemon/">
+        <img src="https://raw.githubusercontent.com/lwcuiaba/jogosdaagatha/main/memoria-pokemon.png" alt="MEMÓRIA POKEMON">
+        <div>🎮 MEMÓRIA (POKEMON)</div>
+      </a>
 
-    <a class="jogo" href="https://lwcuiaba.github.io/desenho/" style="text-align: center; text-decoration: none;">
-      <img src="https://img.icons8.com/clouds/100/crayon.png" alt="Desenhar">
-      <div>Desenhar</div>
-    </a>
+      <a class="jogo" href="https://lwcuiaba.github.io/desenho/">
+        <img src="https://raw.githubusercontent.com/lwcuiaba/jogosdaagatha/main/desenhar.png" alt="DESENHAR">
+        <div>🎨 DESENHAR</div>
+      </a>
 
-    <a class="jogo" href="https://lwcuiaba.github.io/jogonumeros/" style="text-align: center; text-decoration: none;">
-      <img src="https://img.icons8.com/clouds/100/123.png" alt="Jogo dos Números">
-      <div>Jogo dos Números</div>
-    </a>
-
-  </div>
-</main>
-
-
-
-
-
+      <a class="jogo" href="https://lwcuiaba.github.io/jogonumeros/">
+        <img src="https://raw.githubusercontent.com/lwcuiaba/jogosdaagatha/main/numeros.png" alt="JOGO DOS NÚMEROS">
+        <div>🔢 JOGO DOS NÚMEROS</div>
+      </a>
+    </div>
+  </main>
 
   <footer>
-    <div class="cta">💖 Com carinho, do papai 💖</div>
+    <div class="cta">💖 PAPAI TE AMA 💖</div>
   </footer>
 </body>
 </html>
