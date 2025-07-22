@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogos da Agatha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fredoka One', cursive;
+      background: linear-gradient(to bottom, #fce3ff, #fff4d6);
+      overflow-x: hidden;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+    header {
+      background-color: #ffe0f0;
+      padding: 30px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      color: #ff66a3;
+      font-size: 2.5em;
+      margin: 0 0 10px;
+      text-shadow: 1px 1px #fff;
+    }
+
+    #ninoo {
+      width: 120px;
+      animation: wave 3s infinite;
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(6deg); }
+    }
+
+    .fala-balao {
+      background-color: #fff8cc;
+      border: 3px dashed #ffd166;
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: #b95f89;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .fala-balao::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top-color: #fff8cc;
+    }
+
+    main {
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ff8c42;
+      margin-bottom: 20px;
+    }
+
+    .jogos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .jogo {
+      background: #fffae3;
+      border: 4px solid #ffcf56;
+      border-radius: 20px;
+      padding: 20px 10px;
+      width: 160px;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .jogo:hover {
+      transform: scale(1.05);
+      background: #fffbd0;
+    }
+
+    .jogo img {
+      width: 72px;
+      height: 72px;
+    }
+
+    .jogo div {
+      margin-top: 10px;
+      font-size: 1.1em;
+      color: #6f4e7c;
+    }
+
+    footer {
+      background-color: #ffe0e0;
+      padding: 25px 10px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta {
+      font-size: 1.3em;
+      color: #ff4477;
+      font-weight: bold;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .estrela {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://img.icons8.com/emoji/48/star-emoji.png') no-repeat center;
+      background-size: contain;
+      animation: flutuar 8s infinite linear;
+      opacity: 0.6;
+    }
+
+    @keyframes flutuar {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+
+    .estrela:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .estrela:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .estrela:nth-child(3) { left: 50%; animation-delay: 4s; }
+    .estrela:nth-child(4) { left: 70%; animation-delay: 1s; }
+    .estrela:nth-child(5) { left: 90%; animation-delay: 3s; }
+  </style>
+</head>
+<body>
+  <div class="estrela"></div>
+  <div class="estrela"></div>
+  <div class="estrela"></div>
+  <div class="estrela"></div>
+  <div class="estrela"></div>
+
+  <header>
+    <h1>Olá, Agatha! 🌈</h1>
+
+    <!-- Mascote Ninoo em SVG -->
+    <svg id="ninoo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="30" fill="#FFB6C1" stroke="#FF69B4" stroke-width="4"/>
+      <circle cx="22" cy="26" r="5" fill="#fff"/>
+      <circle cx="42" cy="26" r="5" fill="#fff"/>
+      <circle cx="22" cy="26" r="2" fill="#000"/>
+      <circle cx="42" cy="26" r="2" fill="#000"/>
+      <path d="M22 42 Q32 50 42 42" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="fala-balao">Seja bem-vinda ao presente do papai 🎁</div>
+  </header>
+
+ <main>
+  <h2>Vamos brincar!</h2>
+  <div class="jogos">
+    <a class="jogo" href="/jogos/encaixe/index.html">
+      <img src="https://img.icons8.com/clouds/100/blocks.png" alt="Jogo do Encaixe">
+      <div>Jogo do Encaixe</div>
+    </a>
+    <a class="jogo" href="/jogos/memoria-familia/index.html">
+      <img src="https://img.icons8.com/clouds/100/family.png" alt="Memória Família">
+      <div>Memória (Família)</div>
+    </a>
+    <a class="jogo" href="/jogos/memoria-pokemon/index.html">
+      <img src="https://img.icons8.com/clouds/100/pokeball.png" alt="Memória Pokémon">
+      <div>Memória (Pokémon)</div>
+    </a>
+    <a class="jogo" href="/jogos/desenhar/index.html">
+      <img src="https://img.icons8.com/clouds/100/crayon.png" alt="Desenhar">
+      <div>Desenhar</div>
+    </a>
+    <a class="jogo" href="/jogos/numeros/index.html">
+      <img src="https://img.icons8.com/clouds/100/123.png" alt="Jogo dos Números">
+      <div>Jogo dos Números</div>
+    </a>
+  </div>
+</main>
+
+
+
+  <footer>
+    <div class="cta">💖 Com carinho, do papai 💖</div>
+  </footer>
+</body>
+</html>
